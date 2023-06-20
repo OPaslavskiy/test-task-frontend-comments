@@ -14,8 +14,11 @@
     "file-saver": "^2.0.5",
     "fs": "^0.0.1-security",
     "modern-normalize": "^2.0.0",
+    "nanoid": "^4.0.2",
+    "notiflix": "^3.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
     "styled-components": "^6.0.0-rc.3"
   },
   "devDependencies": {

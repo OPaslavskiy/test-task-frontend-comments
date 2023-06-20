@@ -1,18 +1,13 @@
 import { GlobalStyle } from "./GlobalStyle";
 import { Layout } from "./Layout";
-import "./App.css";
-import { getComments } from "./services/getComments";
-import Comments from "./components/Comments";
+import { CommentsPage } from "./components";
 
 function App() {
-  getComments();
   return (
-    <>
+    <Layout>
       <GlobalStyle />
-      <Layout>
-        <Comments />
-      </Layout>
-    </>
+      <CommentsPage />
+    </Layout>
   );
 }
 
