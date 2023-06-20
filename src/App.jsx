@@ -2,6 +2,7 @@ import { GlobalStyle } from "./GlobalStyle";
 import { Layout } from "./Layout";
 import "./App.css";
 import { getComments } from "./services/getComments";
+import Comments from "./components/Comments";
 
 function App() {
   getComments();
@@ -9,7 +10,7 @@ function App() {
     <>
       <GlobalStyle />
       <Layout>
-        <div>123</div>
+        <Comments />
       </Layout>
     </>
   );
