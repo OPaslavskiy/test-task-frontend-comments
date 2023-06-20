@@ -10,8 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.4.0",
+    "file-saver": "^2.0.5",
+    "fs": "^0.0.1-security",
+    "modern-normalize": "^2.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.0-rc.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
