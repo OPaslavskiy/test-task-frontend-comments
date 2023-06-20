@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 import Notiflix from "notiflix";
+import { animateScroll as scroll } from "react-scroll";
 
 import { Comment, SendForm } from "../index";
 import { getComments } from "../../services/getComments";
 
-// import { List } from "./CommentsPage.styled";
+import { List } from "./CommentsPage.styled";
 
 export const CommentsPage = () => {
   const [comments, setComments] = useState([]);
@@ -49,15 +50,16 @@ export const CommentsPage = () => {
 
     setComments((prevComments) => [...prevComments, newCommentObj]);
     setNewComment(() => "");
+    scroll.scrollMore(200);
   };
 
   return (
     <div>
-      <ul>
+      <List>
         {comments.map((comment) => (
           <Comment key={comment.id} handleClick={handleClick} {...comment} />
         ))}
-      </ul>
+      </List>
 
       <SendForm
         handleSubmit={handleSubmit}
