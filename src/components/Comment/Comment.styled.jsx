@@ -25,6 +25,10 @@ export const AreaName = styled.p`
   transform: translate(0%, -50%);
 `;
 
+export const Text = styled.p`
+  padding-left: 30px;
+`;
+
 export const Button = styled.button`
   background-color: transparent;
   background-color: #d49c03;

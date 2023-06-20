@@ -6,8 +6,6 @@ import { animateScroll as scroll } from "react-scroll";
 import { Comment, SendForm } from "../index";
 import { getComments } from "../../services/getComments";
 
-import { List } from "./CommentsPage.styled";
-
 export const CommentsPage = () => {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
@@ -55,11 +53,11 @@ export const CommentsPage = () => {
 
   return (
     <div>
-      <List>
+      <ul>
         {comments.map((comment) => (
           <Comment key={comment.id} handleClick={handleClick} {...comment} />
         ))}
-      </List>
+      </ul>
 
       <SendForm
         handleSubmit={handleSubmit}
